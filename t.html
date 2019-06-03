@@ -2,10 +2,10 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>test</title>
+    <title>1996 - DengSir</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-   
+    <!--<meta itemprop="image" content="./images/fenxiang.png" />-->
     <style>
         html {
             height: 100%;
@@ -57,7 +57,7 @@
             transform: rotate(360deg);
             -ms-transform: rotate(360deg); /* IE 9 */
             -moz-transform: rotate(360deg); /* Firefox */
-            -webkit-transform: rotate(360deg); /* Safari å’Œ Chrome */
+            -webkit-transform: rotate(360deg); /* Safari ºÍ Chrome */
             -o-transform: rotate(360deg); /* Opera */
             filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
         }
@@ -87,23 +87,20 @@
 </head>
 
 <body>
-<audio autoplay="autoplay">
-  <source src="https://love.4d4k.com/public/shangfen.mp3" />
-</audio>
-<!--æ›´æ”¹ä¸ºä½ å¥³æœ‹å‹çš„å¤´åƒ https://cfxtby.github.io/show/static/huangren.jpg-->
+<!--¸ü¸ÄÎªÄãÅ®ÅóÓÑµÄÍ·Ïñ-->
 <div class="cs">
-    <img src="static/huangren.jpg" height="134" width="134" id="logo">
+    <img src="http://wx1.sinaimg.cn/large/006gFOhdly1fr0hdrzlolj30b40b4dg7.jpg" id="logo">
 </div>
 <canvas class="canvas" width="1820" height="905"></canvas>
 <p class="text" style="color: #ed3073;">
-    å–œæ¬¢æ…§æ…§
+    We fell in love
     <br/>
     <span id="span_dt_dt"></span>
 </p>
 <script language="javascript">
     function show_date_time() {
         window.setTimeout("show_date_time()", 1000);
-        BirthDay = new Date("5/1/2019 00:00:00");//è¿™ä¸ªæ—¥æœŸæ˜¯å¯ä»¥ä¿®æ”¹çš„
+        BirthDay = new Date("2/20/2018 00:00:00");//Õâ¸öÈÕÆÚÊÇ¿ÉÒÔĞŞ¸ÄµÄ
         today = new Date();
         timeold = (today.getTime() - BirthDay.getTime());
         sectimeold = timeold / 1000
@@ -116,7 +113,7 @@
         e_minsold = (e_hrsold - hrsold) * 60;
         minsold = Math.floor((e_hrsold - hrsold) * 60);
         seconds = Math.floor((e_minsold - minsold) * 60);
-        span_dt_dt.innerHTML = daysold + "å¤©" + hrsold + "å°æ—¶" + minsold + "åˆ†" + seconds + "ç§’";
+        span_dt_dt.innerHTML = daysold + "Ìì" + hrsold + "Ğ¡Ê±" + minsold + "·Ö" + seconds + "Ãë";
     }
     show_date_time();
 </script>
@@ -125,8 +122,8 @@
         init: function () {
             S.Drawing.init('.canvas');
             document.body.classList.add('body--ready');
-			//æƒ³è¯´çš„è¯
-            S.UI.simulate("|I|like|you|forever|#time");
+			//ÏëËµµÄ»°
+            S.UI.simulate("ÄÈÄÈ|I'm|ZLOE|Nice|to|Meet|You|#countdown 3|#time");
             S.Drawing.loop(function () {
                 S.Shape.render();
             });
@@ -142,7 +139,7 @@
                 window.oRequestAnimationFrame ||
                 window.msRequestAnimationFrame ||
                 function (callback) {
-                    window.setTimeout(callback, 1000 / 10);
+                    window.setTimeout(callback, 1000 / 60);
                 };
         return {
             init: function (el) {
@@ -579,6 +576,9 @@
     }());
     S.init();
 </script>
-
+//ÒôÀÖ¿É¸Ä
+<audio autoplay="autoplay" loop="loop">
+    <source src="http://m10.music.126.net/20180509183512/5ae461e9a42675d782840bf139b05c60/ymusic/e492/ea7a/6a27/8799d19e52d9bbe3ae15febb03d7efdb.mp3" type="audio/mpeg">
+</audio>
 </body>
 </html>
